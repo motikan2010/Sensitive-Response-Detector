@@ -10,12 +10,17 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.1",
         "laravel/framework": "~6.0"
     },
     "autoload": {
         "psr-4": {
             "Motikan2010\\SensitiveResponseDetector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Motikan2010\\SensitiveResponseDetector\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -24,5 +29,9 @@
                 "Motikan2010\\SensitiveResponseDetector\\Provider"
             ]
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "4.*"
     }
 }
